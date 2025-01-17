@@ -1,9 +1,9 @@
 
-# Video Processing Project with OpenCV and PIL
+# Video Processing Project with OpenCV and PIL 🎥⚽
 
-This project demonstrates the detection of a yellow ball in a video using OpenCV and PIL. The code applies color-based masking and identifies the bounding box of the detected object, then draws the bounding box around the object in the video frames.
+This project demonstrates the detection of a yellow ball in a video using **OpenCV** and **PIL**. The code applies color-based masking and identifies the bounding box of the detected object, then draws the bounding box around the object in the video frames.
 
-## Requirements
+## Requirements 📦
 
 To run the project, you need to install the required dependencies using `pip`:
 
@@ -11,7 +11,7 @@ To run the project, you need to install the required dependencies using `pip`:
 - `Pillow`
 - `numpy`
 
-### Installation
+### Installation 🔧
 
 1. Clone the repository:
    ```bash
@@ -24,7 +24,7 @@ To run the project, you need to install the required dependencies using `pip`:
    pip install opencv-python Pillow numpy
    ```
 
-## Usage
+## Usage 🚀
 
 Make sure the video file `Bouncing Red Ball (1).mp4` is in the same directory as the script, or update the path in the script accordingly.
 
@@ -34,19 +34,19 @@ Run the script:
 python script_name.py
 ```
 
-### Description of the code
+### Description of the Code 📝
 
 - The script loads a video (`Bouncing Red Ball (1).mp4`) using OpenCV.
-- It converts each frame from the video to the HSV color space.
-- It defines a color range for yellow in the HSV space and creates a mask for pixels within this range.
+- It converts each frame from the video to the **HSV color space**.
+- It defines a color range for yellow in the HSV space and creates a **mask** for pixels within this range.
 - The script finds the bounding box of the yellow object in the mask and draws a rectangle around it on the original frame.
 - The video is displayed with the bounding box, and you can press `q` to quit the video.
 
-### Example
+### Example 🎬
 
 The video will show the bounding box drawn around the yellow object as it moves through the frames.
 
-### Customizing the Color
+### Customizing the Color 🌈
 
 If you want to track a different color, you can modify the `yellow` variable with a new color in the BGR color space. The `get_limits` function will automatically adjust the HSV range for the new color.
 
@@ -65,3 +65,4 @@ def get_limits(color):
     pass
 ```
 
+---
